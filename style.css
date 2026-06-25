@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #010313;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+header{
+    
+    padding: 20px 8%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Brand*/
+.brand{
+    display: flex;
+    align-items: center;    
+    gap: 1px;
+    padding: 10px, 4%;
+}
+.brand img{
+    width: 100px;
+}
+
+.brand h2{
+    font-size: 30px;
+}
+.brand span{
+    color: #2b43d7;
+
+}
+
+
+
+/*Nav Bar*/
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    
+}
+.nav-links a{
+    color: #ffffffcc;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.nav-links a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
+    text-decoration-color:#2b43d7;
+
+}
+
+.login-btn{
+    padding: 8px 30px;
+    background: #2b43d7;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+hr{
+    border: none;
+    
+}
+
+/*HERO SECTION*/
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 40%;
+}
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.hero h1{
+    font-size: 60px;
+    line-height: 1.2;
+}
+.hero .stay-safe{
+
+    background: linear-gradient(
+        90deg,
+        #3478ff,
+        #770add,
+        #e90fa8
+        
+        
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+.hero p{
+    color: #ffffffcc;
+    font-size: 25px;
+    margin: 15px 0;
+    line-height: 1.2;
+    
+}
+.hero-image{
+    width: 75%;
+}
+.hero img{
+     width:100%;
+
+}
+
+.hero-btn {
+    
+    background: #2b43d7;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    
+}
+.hero-btn:first-child{
+    padding: 15px 60px;
+    background:#2b43d7;
+    
+    color:white;
+
+}
+.hero-btn:last-child{
+    padding: 15px 40px;
+    background:transparent;
+    border: 1px solid #2b43d7;
+    color:white;
+
+}
+
+/*Features*/
+.Features{
+    text-align: center;
+    padding: 70px 10%;
+}
+.Features h2{
+    font-size: 36px;
+}
+.Features p{
+    margin-top: 10px;
+}
+
+.feature-cards{
+    display: flex;
+    margin-top: 40px;
+    grid-template-columns: (4);
+    gap: 10px;
+}
+
+
+
+
+
+
+
+/*Responsive Design*/
+@media screen and (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero img{
+        margin-top: 10px;
+    }
+    .learning-cards{
+        grid-template-columns: 1fr;
+    }
+}
